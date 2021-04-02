@@ -36,7 +36,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
             if ret[1] == 200:
                 zip_upload_remove(drive, repo_path, tmp)
 
-        elif mode in ("add", "update"):
+        elif mode in ("deploy", "update"):
             configs = req.params
             dataset = list(req.files.values())[0]
             extract_dataset(dataset, tmp_data)

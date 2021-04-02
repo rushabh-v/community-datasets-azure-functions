@@ -38,7 +38,7 @@ def add_dataset(data_path, repo_path, configs, mode):
                 os.mkdir(dataset_path)
                 copy(data_path + "/" + configs["dataset_name"] + ".py", dataset_path)
                 return [
-                    f"The tests ran successfully.\nNew dataset added: {configs['username']}:{configs['dataset_name']}",
+                    f"The tests ran successfully (no tests are running as part of the demo, this line is just to show that there will be tests running as a prerequisite to dataset deployment).\nNew dataset added: {configs['username']}:{configs['dataset_name']}",
                     200,
                 ]
         else:
@@ -47,7 +47,7 @@ def add_dataset(data_path, repo_path, configs, mode):
                 os.mkdir(dataset_path)
                 copy(data_path + "/" + configs["dataset_name"] + ".py", dataset_path)
                 return [
-                    f"The tests ran successfully.\nDataset {configs['username']}:{configs['dataset_name']} has been updated.",
+                    f"The tests ran successfully (no tests are running as part of the demo, this line is just to show that there will be tests running as a prerequisite to dataset deployment).\nDataset {configs['username']}:{configs['dataset_name']} has been updated.",
                     200,
                 ]
             else:
